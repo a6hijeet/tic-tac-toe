@@ -1,4 +1,4 @@
-# 🎮 Tic Tac Toe AI with PWA Support
+# 🎮 Tic Tac Toe with PWA Support
 
 An unbeatable Tic Tac Toe game using **Canvas**, **Minimax AI**, and **Progressive Web App** features!
 
@@ -21,4 +21,4 @@ An unbeatable Tic Tac Toe game using **Canvas**, **Minimax AI**, and **Progressi
 1. Clone this repo  
    ```bash
    git clone https://github.com/4bhij33t/tic-tac-toe.git
-   cd tic-tac-toe-ai
+   cd tic-tac-toe
