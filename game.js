@@ -3,6 +3,8 @@ const ctx = canvas.getContext('2d');
 const statusDiv = document.getElementById('status');
 const playerSelect = document.getElementById('playerSelect');
 const difficultySelect = document.getElementById('difficultySelect');
+const autoRestartCheckbox = document.getElementById('autoRestart');
+
 let difficulty = difficultySelect.value;
 
 difficultySelect.addEventListener('change', () => {
@@ -213,6 +215,10 @@ function updateScore(winner) {
   document.getElementById('draws').textContent = `Draws: ${scores.draw}`;
   statusDiv.textContent = winner === 'draw' ? "It's a Draw!" :
     (winner === player ? "You Win!" : "AI Wins!");
+
+  if (autoRestartCheckbox.checked) {
+    setTimeout(() => resetGame(), 1500);
+  }
 }
 
 resetGame();

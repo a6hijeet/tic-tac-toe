@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <link rel="icon" href="/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="/favicon-32x32.png" sizes="32x32" type="image/png">
-  <link rel="icon" href="/favicon-16x16.png" sizes="16x16" type="image/png">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon-32x32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="favicon-16x16.png" sizes="16x16" type="image/png">
   <title>Tic Tac Toe AI</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="manifest" href="manifest.json" />
@@ -14,33 +14,47 @@
 <body class="dark">
   <h1>Tic Tac Toe AI</h1>
 
-  <div class="controls">
-    <label>
-      You Play:
-      <select id="playerSelect">
-        <option value="X">X</option>
-        <option value="O">O</option>
-      </select>
-    </label>
-    <label for="difficultySelect">Difficulty:</label>
-    <select id="difficultySelect">
-      <option value="easy">Easy</option>
-      <option value="beginner">Beginner</option>
-      <option value="hard" selected>Hard</option>
-    </select>
-    <button onclick="resetGame()">Restart</button>
-    <button onclick="toggleTheme()">Toggle Theme</button>
-  </div>
+  <div class="layout">
+    <div class="controls">
+      <div class="options">
+        <div class="playAs">
+          <label for="playerSelect">Play as:</label>
+          <select id="playerSelect">
+            <option value="X">X</option>
+            <option value="O">O</option>
+          </select>
+        </div>
+        <div class="difficultySelect">
+          <label for="difficultySelect">Difficulty:</label>
+          <select id="difficultySelect">
+            <option value="easy">Easy</option>
+            <option value="beginner">Beginner</option>
+            <option value="hard">Hard</option>
+          </select>
+        </div>
+        <label>
+          <input type="checkbox" id="autoRestart" checked>
+          Auto-Restart
+        </label>
+      </div>
+      <div class="buttons">
+        <button onclick="toggleTheme()">Toggle Theme</button>
+        <button onclick="resetGame()">Restart Game</button>
+      </div>
+    </div>
 
-  <canvas id="gameCanvas" width="300" height="300"></canvas>
+    <div class="game-area">
+      <canvas id="gameCanvas" width="300" height="300"></canvas>
+      <div id="status">Your Turn</div>
+    </div>
 
-  <div id="status">Your Turn</div>
-  <div id="scoreBoard">
-    <div id="playerScore">You: 0</div>
-    <div id="aiScore">AI: 0</div>
-    <div id="draws">Draws: 0</div>
+    <div class="scoreboard">
+      <h2>Score</h2>
+      <div id="playerScore">You: 0</div>
+      <div id="aiScore">AI: 0</div>
+      <div id="draws">Draws: 0</div>
+    </div>
   </div>
-  
 
   <script src="game.js"></script>
   <script>
