@@ -1,0 +1,12 @@
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore node stuff (just in case you expand this)
+node_modules/
+npm-debug.log*
+
+# Ignore service worker cache or logs
+*.log
+.cache/
+dist/
