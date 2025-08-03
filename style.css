@@ -22,23 +22,72 @@ body {
   padding: 1rem;
   transition: background 0.3s, color 0.3s;
 }
-
-h1 {
-  text-align: center;
-  margin-bottom: 1rem;
+.hide {
+  display: none;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
+.header #menu #menu-icon {
+  background-image: url("settings.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+  border: none;
+}
+body.dark .header #menu #menu-icon {
+  background-image: url("settings-dark.svg");
+}
+.controls {
+  position: absolute;
+  width: 50vw;
+  right: 14%;
+  background: var(--bg-color);
+  border: 2px solid;
+  padding: 5px;
+  border-radius: 6px;
+}
+.controls .options div {
+  margin: 10px 5px;
+}
+.controls .options div label {
+  display: block;
+}
+.controls .options div select, .controls .options div button {
+  width: 100%;
+}
+.autoRestart {
+  display: block;
+}
+#closeMenu {
+  float: right;
+  padding: 5px;
+}
+.buttons button {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  border: 2px solid var(--line-color);
+  border-radius: 6px;
+}
 .layout {
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 1rem;
   max-width: 1024px;
   margin: 0 auto;
 }
 
-.controls,
+.scoreboard {
+  display: flex;
+  justify-content: space-between;
+}
+
 .scoreboard {
   flex: 1 1 200px;
   background-color: rgba(0, 0, 0, 0.03);
@@ -48,19 +97,8 @@ h1 {
   min-width: 200px;
 }
 
-.controls h2,
-.scoreboard h2 {
-  margin-top: 0;
-}
-
 .options {
-  display: flex;
-  justify-content: space-between;
-}
-
-label {
-  display: block;
-  margin: 0.75rem 0 0.25rem;
+ margin-top: 15px;
 }
 
 select,
@@ -68,7 +106,6 @@ input[type="checkbox"],
 button {
   font-size: 1rem;
   padding: 6px 12px;
-  margin-top: 5px;
 }
 
 select {
@@ -101,30 +138,16 @@ select:focus {
 }
 
 canvas {
-  background: var(--canvas-bg);
+  background: var(--bg-color);
   border: 2px solid var(--line-color);
   touch-action: manipulation;
 }
 
 #status {
-  margin-top: 1rem;
-  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
   font-weight: bold;
 }
-
-.scoreboard div {
-  font-size: 1.1em;
-  margin-bottom: 0.5em;
-  font-weight: bold;
-}
-
-.buttons {
+#restartButton {
   margin-top: 1rem;
-
-}
-.buttons button {
-  background-color: var(--canvas-bg);
-  color: var(--text-color);
-  border: 2px solid var(--line-color);
-  border-radius: 6px;
 }

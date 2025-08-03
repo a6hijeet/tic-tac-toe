@@ -4,6 +4,24 @@ const statusDiv = document.getElementById('status');
 const playerSelect = document.getElementById('playerSelect');
 const difficultySelect = document.getElementById('difficultySelect');
 const autoRestartCheckbox = document.getElementById('autoRestart');
+const restartButton = document.getElementById('restartButton');
+const controls = document.getElementById('controls');
+const menu = document.getElementById('menu-icon');
+const closeMenu = document.getElementById('closeMenu');
+
+menu.addEventListener('click', () => {
+  controls.classList.toggle('hide');
+});
+
+closeMenu.addEventListener('click', () => {
+  controls.classList.add('hide');
+});
+
+autoRestartCheckbox.addEventListener('click', () => {
+ 
+    restartButton.classList.toggle('hide', autoRestartCheckbox.checked);
+
+});
 
 let difficulty = difficultySelect.value;
 
