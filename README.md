@@ -14,7 +14,7 @@ An unbeatable Tic Tac Toe game using **Canvas**, **Minimax AI**, and **Progressi
 
 ## 📦 Live Demo
 
-[👉 Play Here (GitHub Pages)](https://4bhij33t.github.io/tic-tac-toe/)
+[👉 Play Here (GitHub Pages)](https://4bhi-jeet.github.io/tic-tac-toe/)
 
 ## 🚀 Getting Started
 
@@ -22,3 +22,4 @@ An unbeatable Tic Tac Toe game using **Canvas**, **Minimax AI**, and **Progressi
    ```bash
    git clone https://github.com/4bhij33t/tic-tac-toe.git
    cd tic-tac-toe
+
