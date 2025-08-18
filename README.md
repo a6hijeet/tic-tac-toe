@@ -20,6 +20,7 @@ An unbeatable Tic Tac Toe game using **Canvas**, **Minimax AI**, and **Progressi
 
 1. Clone this repo  
    ```bash
-   git clone https://github.com/4bhij33t/tic-tac-toe.git
+   git clone https://github.com/4bhi-jeet/tic-tac-toe.git
    cd tic-tac-toe
+
 
