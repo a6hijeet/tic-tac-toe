@@ -1,26 +1,22 @@
-# 🎮 Tic Tac Toe with PWA Support
+# Tic Tac Toe with PWA Support
 
-An unbeatable Tic Tac Toe game using **Canvas**, **Minimax AI**, and **Progressive Web App** features!
+A Tic Tac Toe game using **HTML**, **CSS**, **JavaScript**, **Canvas**, and **Progressive Web App** features!
 
-## ✨ Features
+## Features
 
-- 🤖 Unbeatable AI (Minimax algorithm)
-- 🔒 Blocks your win before trying to win
-- 🎨 Canvas-based (harder to tamper in dev tools)
-- 🌓 Dark/Light mode
-- 📲 PWA support (Installable & offline-ready)
-- 📈 Scoreboard
-- 🧠 Optional Minimax Visualizer
+- Blocks your win before trying to win
+- Canvas-based (harder to tamper in dev tools)
+- Dark/Light mode
+- PWA support (Installable & offline-ready)
+- Scoreboard
 
-## 📦 Live Demo
+## Live Demo
 
-[👉 Play Here (GitHub Pages)](https://4bhi-jeet.github.io/tic-tac-toe/)
+[Play Here (GitHub Pages - https://a6hijeet.github.io/tic-tac-toe/)](https://a6hijeet.github.io/tic-tac-toe/)
 
-## 🚀 Getting Started
+## Getting Started
 
 1. Clone this repo  
    ```bash
-   git clone https://github.com/4bhi-jeet/tic-tac-toe.git
+   git clone git@github.com:a6hijeet/tic-tac-toe.git
    cd tic-tac-toe
-
-
